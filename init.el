@@ -32,3 +32,17 @@
 (global-set-key
  (kbd "C-c C-x")
  'kill-region)
+
+;; binding suspension emacs
+(global-set-key
+ (kbd "C-c C-q")
+ 'iconify-frame)
+
+(global-set-key
+ (kbd "C-c C-q")
+ 'suspend-frame)
+
+;; kill emacs
+(global-set-key
+ (kbd "C-z")
+ 'save-buffers-kill-emacs)
