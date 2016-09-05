@@ -46,3 +46,7 @@
 (global-set-key
  (kbd "C-z")
  'save-buffers-kill-emacs)
+
+(global-set-key
+ (kbd "C-x C-z")
+ 'save-buffers-kill-emacs)
