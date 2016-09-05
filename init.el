@@ -1,9 +1,6 @@
 ;;Environment
 (set-language-environment "UTF-8")
 
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
 (display-time-mode t)
 
 ;; numéro de la colonne
@@ -19,3 +16,19 @@
 (setq custom-file "~/.emacs.d/emacs-custom.el")
 (load custom-file) 
 
+;; Binding des touches
+(global-set-key (quote [f1]) (quote help-for-help)) ;; copier
+;; binding key copy
+(global-set-key
+ (kbd "C-c C-c")
+ 'kill-ring-save)
+
+;; binding key paste
+(global-set-key
+ (kbd "C-c C-v")
+ 'yank)
+
+;; binding key cut
+(global-set-key
+ (kbd "C-c C-x")
+ 'kill-region)
